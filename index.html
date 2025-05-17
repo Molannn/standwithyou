@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>未來探索家</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <nav class="bg-white border-b shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold flex items-center space-x-2">
+        <span class="text-indigo-600 text-2xl">📘</span>
+        <span>未來探索家</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="#" class="text-gray-700 hover:text-indigo-600 text-sm">我的收藏</a>
+        <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-indigo-700">登入 / 註冊</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Title & Search -->
+  <section class="py-10">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold mb-2">探索你的未來職涯</h1>
+      <p class="mb-6 text-gray-600">與大學生和業界專業人士交流，獲取第一手的職涯建議和經驗分享</p>
+
+      <input type="text" placeholder="搜尋職業、學校或專業領域..." class="w-full md:w-2/3 border px-4 py-2 rounded-lg shadow-sm mb-6" />
+
+      <div class="flex space-x-2">
+        <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm">全部</button>
+        <button class="border px-4 py-2 rounded-lg text-sm">大學生</button>
+        <button class="border px-4 py-2 rounded-lg text-sm">業界人士</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section class="py-6">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <div class="h-10 w-10 bg-gray-200 rounded-full mb-2"></div>
+            <h2 class="text-lg font-semibold">林小明</h2>
+            <p class="text-sm text-indigo-700">台灣大學 資訊工程學系</p>
+          </div>
+          <span class="text-xs bg-gradient-to-r from-indigo-500 to-blue-500 text-white px-3 py-1 rounded-full">大學生</span>
+        </div>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">程式設計</span>
+          <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">人工智慧</span>
+          <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">大學申請</span>
+        </div>
+        <p class="text-sm mt-4 text-gray-600">我是台大資工系大三學生，擅長程式設計和人工智慧相關領域。曾參與多項專案，歡迎交流。</p>
+        <p class="text-xs text-gray-500 mt-2">可預約時段: 5</p>
+        <div class="mt-4 flex justify-between items-center">
+          <a href="#" class="text-sm bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">聯繫諮詢</a>
+          <svg class="h-5 w-5 text-gray-400 hover:text-gray-600 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <div class="h-10 w-10 bg-gray-200 rounded-full mb-2"></div>
+            <h2 class="text-lg font-semibold">王小華</h2>
+            <p class="text-sm text-indigo-700">政治大學 心理學系</p>
+          </div>
+          <span class="text-xs bg-gradient-to-r from-indigo-500 to-blue-500 text-white px-3 py-1 rounded-full">大學生</span>
+        </div>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">心理學</span>
+          <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">學習方法</span>
+          <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">升學規劃</span>
+        </div>
+        <p class="text-sm mt-4 text-gray-600">政大心理系大四學生，對臨床心理與學習策略有深入理解，歡迎討論升學準備。</p>
+        <p class="text-xs text-gray-500 mt-2">可預約時段: 3</p>
+        <div class="mt-4 flex justify-between items-center">
+          <a href="#" class="text-sm bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">聯繫諮詢</a>
+          <svg class="h-5 w-5 text-gray-400 hover:text-gray-600 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <div class="h-10 w-10 bg-gray-200 rounded-full mb-2"></div>
+            <h2 class="text-lg font-semibold">陳大偉</h2>
+            <p class="text-sm text-pink-600">Google 資深軟體工程師</p>
+          </div>
+          <span class="text-xs bg-gradient-to-r from-pink-500 to-red-500 text-white px-3 py-1 rounded-full">業界人士</span>
+        </div>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="text-xs bg-pink-100 text-pink-800 px-2 py-1 rounded">軟體開發</span>
+          <span class="text-xs bg-pink-100 text-pink-800 px-2 py-1 rounded">職涯規劃</span>
+          <span class="text-xs bg-pink-100 text-pink-800 px-2 py-1 rounded">面試技巧</span>
+        </div>
+        <p class="text-sm mt-4 text-gray-600">在 Google 操作深度開發多年，參與大型專案，對職涯規劃與產業趨勢有深入洞見。</p>
+        <p class="text-xs text-gray-500 mt-2">可預約時段: 2</p>
+        <div class="mt-4 flex justify-between items-center">
+          <a href="#" class="text-sm bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">聯繫諮詢</a>
+          <svg class="h-5 w-5 text-gray-400 hover:text-gray-600 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
